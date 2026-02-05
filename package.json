@@ -2,6 +2,7 @@
   "name": "how-are-you-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pierre-reyne.github.io/project",
   "description": "Single-page React demo app: “How are you?” lightweight check-in.",
   "scripts": {
     "start": "react-scripts start",
