@@ -3,8 +3,8 @@
 Small, sequential steps designed for AI-assisted coding. Check items off as you go.
 
 ### Setup
-- [ ] Initialize React app skeleton (JS + React) with a single-page `App` render target
-- [ ] Add basic project scripts (dev/build/test if applicable) and ensure the app starts locally
+- [x] Initialize React app skeleton (JS + React) with a single-page `App` render target
+- [x] Add basic project scripts (dev/build/test if applicable) and ensure the app starts locally
 
 ### Base layout + wiring
 - [ ] Create `App` page layout: title, prompt, main container, placeholder sections for form + summary

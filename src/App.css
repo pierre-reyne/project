@@ -1,0 +1,51 @@
+.App {
+  min-height: 100vh;
+  padding: 28px 16px 40px;
+}
+
+.AppHeader {
+  max-width: 820px;
+  margin: 0 auto 20px;
+}
+
+.AppTitle {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.AppPrompt {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.AppMain {
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.AppCard {
+  background: var(--panel);
+  border: 1px solid var(--panelBorder);
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.AppPlaceholder {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (min-width: 860px) {
+  .AppMain {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+
