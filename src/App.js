@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
+import "./App.css";
 
 export function App() {
   return (
@@ -13,7 +13,7 @@ export function App() {
       <main className="AppMain">
         <section className="AppCard" aria-label="Check-in form">
           <p className="AppPlaceholder">
-            Form goes here (next steps: mood, note, tags, submit).
+            Form goes here (next steps: mood, note, tags, submit). Chnage one
           </p>
         </section>
 
@@ -24,5 +24,3 @@ export function App() {
     </div>
   );
 }
-
-
