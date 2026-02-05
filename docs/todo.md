@@ -6,6 +6,14 @@ Small, sequential steps designed for AI-assisted coding. Check items off as you 
 - [x] Initialize React app skeleton (JS + React) with a single-page `App` render target
 - [x] Add basic project scripts (dev/build/test if applicable) and ensure the app starts locally
 
+### CI/CD (GitHub Pages)
+- [x] Add `homepage` to `package.json` for GitHub Pages base path (`/project`)
+- [x] Add GitHub Actions workflow to build and deploy to GitHub Pages (`.github/workflows/ci.yml`)
+- [ ] In GitHub repo settings, set **Pages → Source** to **GitHub Actions**
+- [ ] Confirm the workflow run succeeds on `main` and produces a deployed URL
+- [ ] Verify the site loads at `https://pierre-reyne.github.io/project`
+- [x] (Optional) Add a CI workflow for PRs (install + test + build) without deploying
+
 ### Base layout + wiring
 - [ ] Create `App` page layout: title, prompt, main container, placeholder sections for form + summary
 - [ ] Create `CheckInForm` component with empty form and named export; wire into `App`
