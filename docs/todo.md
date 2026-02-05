@@ -1,6 +1,7 @@
 ## Implementation Todo List: “How are you?” Demo App
 
 Small, sequential steps designed for AI-assisted coding. Check items off as you go.
+Last updated: trigger a fresh Pages deploy run.
 
 ### Setup
 - [x] Initialize React app skeleton (JS + React) with a single-page `App` render target
