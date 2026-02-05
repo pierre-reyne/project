@@ -13,7 +13,7 @@ export function App() {
       <main className="AppMain">
         <section className="AppCard" aria-label="Check-in form">
           <p className="AppPlaceholder">
-            Form goes here (next steps: mood, note, tags, submit). Chnage one
+            Form goes here (next steps: mood, note, tags, submit).
           </p>
         </section>
 
