@@ -22,7 +22,7 @@ Last updated: trigger a fresh Pages deploy run.
 - [x] Install testing dependencies (CRA-compatible):
   - `npm i -D @testing-library/react @testing-library/jest-dom @testing-library/user-event`
 - [x] Add Jest setup file `src/setupTests.js` importing `@testing-library/jest-dom`
-- [x] Add a first smoke test `src/App.test.js` that renders `<App />` and asserts the title or main heading is visible
+- [x] Add a first smoke test `src/__tests__/App.test.js` that renders `<App />` and asserts the title or main heading is visible
 - [x] Ensure tests run locally:
   - Watch mode: `npm test`
   - CI mode: `CI=true npm test -- --watchAll=false`
