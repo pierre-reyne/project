@@ -1,6 +1,41 @@
 :root {
   color-scheme: light;
   --bg: #0b1220;
+
+  /* Spring 2026-inspired palette (Vogue: fuchsia, lime, Klein blue, tomato, emerald, Cloud Dancer). */
+  --trendFuchsia: #ff2da1;
+  --trendLime: #b7ff2a;
+  --trendKleinBlue: #2d5bff;
+  --trendTomato: #ff3b30;
+  --trendEmerald: #00a86b;
+  --trendCloudDancer: #f4f1e8;
+
+  --appBackground: radial-gradient(
+      1100px 700px at 20% 12%,
+      color-mix(in srgb, var(--trendKleinBlue) 55%, transparent),
+      transparent 62%
+    ),
+    radial-gradient(
+      900px 560px at 85% 18%,
+      color-mix(in srgb, var(--trendEmerald) 50%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 650px at 14% 82%,
+      color-mix(in srgb, var(--trendFuchsia) 45%, transparent),
+      transparent 62%
+    ),
+    radial-gradient(
+      900px 650px at 88% 80%,
+      color-mix(in srgb, var(--trendTomato) 40%, transparent),
+      transparent 63%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--trendCloudDancer) 10%, transparent),
+      transparent 45%
+    ),
+    var(--bg);
   --panel: rgba(255, 255, 255, 0.08);
   --panelBorder: rgba(255, 255, 255, 0.12);
   --text: rgba(255, 255, 255, 0.92);
@@ -21,8 +56,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  background: radial-gradient(1000px 600px at 20% 10%, #172554, transparent 60%),
-    radial-gradient(900px 500px at 80% 20%, #0f766e, transparent 55%), var(--bg);
+  background: var(--appBackground);
   color: var(--text);
 }
 
