@@ -16,7 +16,15 @@
     "react-scripts": "4.0.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^12.8.3",
     "type-fest": "0.13.1"
+  },
+  "overrides": {
+    "@testing-library/dom": "8.20.1",
+    "@types/jest": "26.0.24",
+    "expect": "26.6.2"
   },
   "browserslist": {
     "production": [
@@ -31,5 +39,3 @@
     ]
   }
 }
-
-
