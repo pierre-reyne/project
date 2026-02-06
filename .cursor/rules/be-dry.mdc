@@ -1,0 +1,36 @@
+---
+description: Avoid duplication; prefer shared helpers and single sources of truth
+alwaysApply: true
+---
+
+# Be DRY (Don’t Repeat Yourself)
+
+- **Prefer reuse over copy/paste**: before writing code, search for an existing helper/component/util that already does it.
+- **One source of truth**: centralize constants, mappings, validation rules, and formatting in a single place.
+- **Refactor when duplication appears**: if you duplicate logic 2+ times, extract a shared function/component/module.
+- **Keep abstractions small**: extract the *minimal* shared part; avoid “mega utils” that couple unrelated features.
+- **Use data-driven patterns**: prefer maps/config + small functions over repeating similar `if/else` blocks.
+- **DRY tests too**: reuse fixtures/builders and helper assertions; avoid duplicating long setup across test files.
+
+## Examples (adapt to the language you’re editing)
+
+```js
+// ❌ BAD: repeated formatting logic
+const titleA = name.trim().toLowerCase();
+const titleB = otherName.trim().toLowerCase();
+
+// ✅ GOOD: single helper
+function normalizeName(name) {
+  return name.trim().toLowerCase();
+}
+```
+
+```js
+// ❌ BAD: duplicated options/labels in multiple places
+// ✅ GOOD: define once and reuse
+export const MOOD_LABELS = {
+  good: 'Good',
+  ok: 'OK',
+  bad: 'Bad',
+};
+```
