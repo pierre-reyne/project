@@ -1,0 +1,42 @@
+---
+description: Use a semantic HTML heading hierarchy (h1–h6) in JSX/JS views
+globs: "**/*.{js,jsx}"
+alwaysApply: false
+---
+
+# HTML heading structure (h1–h6)
+
+- **Use headings for structure, not styling**: don’t pick `<h*>` just to get bigger text; use CSS for visual size.
+- **One `<h1>` per page/view**: the main page title should be the only `<h1>` in a screen/route.
+- **Don’t skip levels**: after `<h1>`, use `<h2>` for top-level sections, then `<h3>` for subsections, etc.
+- **Keep headings ordered**: avoid jumping back and forth (e.g. `<h2>` → `<h4>` → `<h2>`), unless a deliberate nested structure exists.
+- **Prefer real headings over generic tags**: use `<h2>` instead of `<div className="heading">` when the text is a section heading.
+
+## Examples (React / JSX)
+
+```jsx
+// ❌ BAD: multiple h1, skipped level
+export function ProductPage() {
+  return (
+    <>
+      <h1>Products</h1>
+      <h1>On sale</h1>
+      <h3>Shipping</h3>
+    </>
+  );
+}
+```
+
+```jsx
+// ✅ GOOD: single h1, consistent hierarchy
+export function ProductPage() {
+  return (
+    <>
+      <h1>Products</h1>
+      <h2>On sale</h2>
+      <h2>Shipping</h2>
+      <h3>International</h3>
+    </>
+  );
+}
+```
