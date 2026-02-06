@@ -11,4 +11,7 @@
 
 [build.environment]
   PUBLIC_URL = "/"
+  # CRA v4 (react-scripts 4 / webpack 4) is not compatible with newer Node
+  # versions (17+ / OpenSSL 3). Pin Node to a compatible version on Netlify.
+  NODE_VERSION = "16"
 
