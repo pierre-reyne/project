@@ -1,0 +1,14 @@
+## Netlify configuration
+##
+## This project currently sets `homepage` in `package.json` for GitHub Pages
+## (served from `/project`). Netlify typically serves from the domain root (`/`).
+## We override Create React App's `PUBLIC_URL` during Netlify builds so assets are
+## generated with root-relative URLs without changing the GitHub Pages config.
+
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  PUBLIC_URL = "/"
+
