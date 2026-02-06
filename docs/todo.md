@@ -27,6 +27,7 @@ Last updated: trigger a fresh Pages deploy run.
   - Watch mode: `npm test`
   - CI mode: `CI=true npm test -- --watchAll=false`
 - [x] Ensure CI workflow stays green (it already runs `CI=true npm test -- --watchAll=false --passWithNoTests`)
+- [ ] Create a pull request for the change (include summary + test plan in the PR body)
 
 ### Base layout + wiring
 
